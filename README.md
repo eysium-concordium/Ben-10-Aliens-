@@ -16,6 +16,12 @@ ______________________________________________
 - Project Status: Completed
 ______________________________________________
 
+# Tech Stack
+ - HTML
+ - CSS
+ - JS
+ - Python
+
 # DEMO - SCREENSHOTS
 ![img-1](https://user-images.githubusercontent.com/63858190/152361254-3dc08fde-d086-4cd7-943b-b304be5a56fb.jpeg)
 
