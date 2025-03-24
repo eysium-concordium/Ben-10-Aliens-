@@ -1,38 +1,194 @@
-
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Classic Aliens Database</title>
     <style>
-  	img {
-  		display: block;
-  		margin-left: auto;
-  		margin-right: auto;
-  	}
+      body {
+        background: url('imgResources/background.jpg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
+      
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+        width: 300px;
+        object-fit: contain;
+        background-color: rgba(0,0,0,0.7);
+        padding: 10px;
+        border-radius: 10px;
+      }
 
-    p {text-align: center;}
-  	</style>
+      p {
+        text-align: center; 
+        font-weight: bold;
+        margin: 10px auto;
+        padding: 10px;
+        max-width: 300px;
+      }
+      
+      h1, h3 {
+        padding: 10px;
+        text-align: center;
+      }
+      
+      .alien-container {
+        background-color: rgba(0,0,0,0.7);
+        margin: 20px auto;
+        max-width: 400px;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      
+      .video-container {
+        margin: 20px auto;
+        text-align: center;
+      }
+      
+      .database-header {
+        background-color: black;
+        color: white;
+        padding: 15px;
+        margin-bottom: 20px;
+      }
+      
+      .alien-stats {
+        background-color: yellow;
+        color: black;
+      }
+      
+      .alien-desc {
+        background-color: white;
+        color: black;
+        font-size: 0.9em;
+      }
+    </style>
   </head>
-  <body background="https://www.dropbox.com/s/3vlh09hgbgv8ohi/ben-10-background.jpg?dl=1">
+  <body>
 
-    <h1 align="center" style="background-color: black;color: white">Classic Aliens Database</h1>
-    <p align="center">
-  <iframe width="320" height="240"
-src="https://www.youtube.com/embed/nxgDl_7ZxJk?autoplay=1&mute=1">
-</iframe>
-</p>
-    <h3 align="center" style="background-color: black;color: white">DATABASE - LOADED</h3>
+    <div class="database-header">
+      <h1>Classic Aliens Database</h1>
+      <div class="video-container">
+        <iframe width="320" height="240"
+          src="https://www.youtube.com/embed/nxgDl_7ZxJk?autoplay=1&mute=1"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+      <h3>DATABASE - LOADED</h3>
+    </div>
 
+    <!-- Alien Entries will be inserted here -->
+    <div id="aliens-container"></div>
 
+    <script>
+      const aliens = [
+        { 
+          name: "HeatBlast", 
+          image: "imgResources/Heatblast.png", 
+          power: 70, 
+          rating: 3, 
+          ultimate: "NO",
+          description: "Pyrokinesis, fire manipulation, heat resistance"
+        },
+        { 
+          name: "WildMutt", 
+          image: "imgResources/WildMutt.png", 
+          power: 50, 
+          rating: 2, 
+          ultimate: "YES",
+          description: "Enhanced senses, quadrupedal agility, sharp claws"
+        },
+        { 
+          name: "Four Arms", 
+          image: "imgResources/Fourarms.png", 
+          power: 95, 
+          rating: 5, 
+          ultimate: "NO",
+          description: "Superhuman strength, four arms, enhanced durability"
+        },
+        { 
+          name: "XLR8", 
+          image: "imgResources/XLR8.png", 
+          power: 85, 
+          rating: 4, 
+          ultimate: "NO",
+          description: "Super speed, sharp claws, enhanced reflexes"
+        },
+        { 
+          name: "Ghostfreak", 
+          image: "imgResources/Ghostfreak.png", 
+          power: 75, 
+          rating: 4, 
+          ultimate: "YES",
+          description: "Intangibility, invisibility, possession"
+        },
+        { 
+          name: "Ripjaws", 
+          image: "imgResources/Ripjaws.png", 
+          power: 65, 
+          rating: 3, 
+          ultimate: "NO",
+          description: "Aquatic adaptation, razor-sharp teeth, enhanced strength in water"
+        },
+        { 
+          name: "Upgrade", 
+          image: "imgResources/Upgrade.png", 
+          power: 80, 
+          rating: 4, 
+          ultimate: "YES",
+          description: "Technological merging, enhancement, and control"
+        },
+        { 
+          name: "Diamondhead", 
+          image: "imgResources/Diamondhead.png", 
+          power: 90, 
+          rating: 5, 
+          ultimate: "NO",
+          description: "Crystalline body, projectile generation, regeneration"
+        },
+        { 
+          name: "Cannonbolt", 
+          image: "imgResources/Cannonbolt.png", 
+          power: 85, 
+          rating: 4, 
+          ultimate: "YES",
+          description: "High-speed rolling, near-indestructible shell"
+        },
+        { 
+          name: "Grey Matter", 
+          image: "imgResources/GreyMatter.png", 
+          power: 30, 
+          rating: 1, 
+          ultimate: "NO",
+          description: "Super intelligence, small size, climbing ability"
+        }
+      ];
 
-    <h3 align="center" style="background-color: darkgreen;color: yellow">1. HeatBlast</h3>
-    <img src="https://cdna.artstation.com/p/marketplace/printed_product_covers/000/008/638/art_print_big/file.jpg?1556015401" style="height: 300px;width: 300px">
-    <p style="background-color: yellow;color: black"> POWER: 70 | RATING: 3 | ULTIMATE: NO</p><br>
-
-    <h3 align="center" style="background-color: darkgreen;color: yellow">2. WildMutt</h3>
-    <img src="https://1.bp.blogspot.com/-3hVn21LPW_I/XuuBH-s4tNI/AAAAAAAAAbc/RBzJ9jT-OAU5wStE7AkPqzvOSvTgUYTYgCK4BGAsYHg/s623/Screenshot%2B2020-06-18%2Bat%2B11.05.07%2BAM.png" style="height: 300px;width: 300px">
-    <p style=" background-color: yellow;color: black"> POWER: 50 | RATING: 2 | ULTIMATE: YES</p><br>
-
-
+      const container = document.getElementById('aliens-container');
+      
+      aliens.forEach(alien => {
+        const alienDiv = document.createElement('div');
+        alienDiv.className = 'alien-container';
+        
+        alienDiv.innerHTML = `
+          <h3 style='background-color: darkgreen;color: yellow'>${alien.name}</h3>
+          <img src='${alien.image}' alt='${alien.name}' onerror="this.src='imgResources/GreyMatter.png'" title='${alien.description}'>
+          <p class='alien-stats'> 
+            POWER: ${alien.power} | RATING: ${alien.rating} | ULTIMATE: ${alien.ultimate}
+          </p>
+          <p class='alien-desc'>
+            ${alien.description}
+          </p>
+        `;
+        
+        container.appendChild(alienDiv);
+      });
+    </script>
   </body>
 </html>

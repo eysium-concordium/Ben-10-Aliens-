@@ -1,32 +1,186 @@
-
 <html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Force Aliens Database</title>
-      <style>
-         img {
-         display: block;
-         margin-left: auto;
-         margin-right: auto;
-         }
-         p {text-align: center;}
-      </style>
-   </head>
-   <body background="https://www.dropbox.com/s/3vlh09hgbgv8ohi/ben-10-background.jpg?dl=1">
-      <h1 align="center" style="background-color: black;color: white">Force Aliens Database</h1>
-      <p align="center">
-         <iframe width="320" height="240"
-            src="https://www.youtube.com/embed/UXKzr4jWT7c?autoplay=1&mute=1">
-         </iframe>
-      </p>
-      <h3 align="center" style="background-color: black;color: white">DATABASE - LOADED</h3>
-      <h3 align="center" style="background-color: darkgreen;color: yellow">1. HeatBlast</h3>
-      <img src="https://cdna.artstation.com/p/marketplace/printed_product_covers/000/008/638/art_print_big/file.jpg?1556015401" style="height: 300px;width: 300px">
-      <p style="background-color: yellow;color: black"> POWER: 70 | RATING: 3 | ULTIMATE: NO</p>
-      <br>
-      <h3 align="center" style="background-color: darkgreen;color: yellow">2. WildMutt</h3>
-      <img src="https://1.bp.blogspot.com/-3hVn21LPW_I/XuuBH-s4tNI/AAAAAAAAAbc/RBzJ9jT-OAU5wStE7AkPqzvOSvTgUYTYgCK4BGAsYHg/s623/Screenshot%2B2020-06-18%2Bat%2B11.05.07%2BAM.png" style="height: 300px;width: 300px">
-      <p style=" background-color: yellow;color: black"> POWER: 50 | RATING: 2 | ULTIMATE: YES</p>
-      <br>
-   </body>
+  <head>
+    <meta charset="utf-8">
+    <title>Alien Force Database</title>
+    <style>
+      body {
+         background: url('imgResources/background.jpg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
+      
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border: 3px solid #00a6ff;
+        border-radius: 10px;
+        background-color: rgba(0,0,0,0.7);
+        padding: 5px;
+        transition: transform 0.3s;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+      }
+
+      p {
+        text-align: center;
+        font-weight: bold;
+        margin: 10px auto;
+        padding: 10px;
+        max-width: 300px;
+      }
+      
+      h1, h3 {
+        padding: 10px;
+        text-align: center;
+        margin: 0;
+      }
+      
+      .alien-container {
+        background-color: rgba(0,0,0,0.7);
+        margin: 20px auto;
+        max-width: 400px;
+        border-radius: 10px;
+        padding: 10px;
+        border: 2px solid #00a6ff;
+      }
+      
+      .video-container {
+        margin: 20px auto;
+        text-align: center;
+        background-color: rgba(0,0,0,0.7);
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 320px;
+      }
+      
+      .database-header {
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #00a6ff;
+      }
+      
+      .stats {
+        background-color: #00a6ff;
+        color: black;
+      }
+      
+      .alien-name {
+        background-color: #003b71;
+        color: white;
+        margin-top: 15px;
+        letter-spacing: 1px;
+      }
+      
+      .alien-desc {
+        color: #a8e1ff;
+        font-size: 0.9em;
+        padding: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="database-header">
+      <h1>Alien Force Database</h1>
+      <div class="video-container">
+        <iframe width="320" height="240"
+          src="https://www.youtube.com/embed/UXKzr4jWT7c?autoplay=1&mute=1"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+      <h3>OMNITRIX INITIALIZED - 10 ALIENS LOADED</h3>
+    </div>
+
+    <!-- Alien 1: Swampfire -->
+    <div class="alien-container">
+      <h3 class="alien-name">1. Swampfire</h3>
+      <img src="https://i.imgur.com/vVXhQ3P.png" alt="Swampfire">
+      <p class="stats">POWER: 85 | RATING: 4 | ULTIMATE: YES</p>
+      <p class="alien-desc">Plant-based pyrokinetic with regeneration abilities</p>
+    </div>
+
+    <!-- Alien 2: Humungousaur -->
+    <div class="alien-container">
+      <h3 class="alien-name">2. Humungousaur</h3>
+      <img src="https://i.imgur.com/KY9WZQx.png" alt="Humungousaur">
+      <p class="stats">POWER: 95 | RATING: 5 | ULTIMATE: YES</p>
+      <p class="alien-desc">Size-shifting dinosaur with super strength</p>
+    </div>
+
+    <!-- Alien 3: Jetray -->
+    <div class="alien-container">
+      <h3 class="alien-name">3. Jetray</h3>
+      <img src="https://i.imgur.com/5b1kQ5S.png" alt="Jetray">
+      <p class="stats">POWER: 80 | RATING: 4 | ULTIMATE: NO</p>
+      <p class="alien-desc">Aerospace predator with neuroshock blasts</p>
+    </div>
+
+    <!-- Alien 4: Big Chill -->
+    <div class="alien-container">
+      <h3 class="alien-name">4. Big Chill</h3>
+      <img src="https://i.imgur.com/9zqXJjF.png" alt="Big Chill">
+      <p class="stats">POWER: 75 | RATING: 4 | ULTIMATE: YES</p>
+      <p class="alien-desc">Cryokinetic moth-like alien with intangibility</p>
+    </div>
+
+    <!-- Alien 5: Chromastone -->
+    <div class="alien-container">
+      <h3 class="alien-name">5. Chromastone</h3>
+      <img src="https://i.imgur.com/4mY0pQk.png" alt="Chromastone">
+      <p class="stats">POWER: 90 | RATING: 5 | ULTIMATE: NO</p>
+      <p class="alien-desc">Crystalline energy absorber and projector</p>
+    </div>
+
+    <!-- Alien 6: Brainstorm -->
+    <div class="alien-container">
+      <h3 class="alien-name">6. Brainstorm</h3>
+      <img src="https://i.imgur.com/7NQhL3y.png" alt="Brainstorm">
+      <p class="stats">POWER: 65 | RATING: 3 | ULTIMATE: NO</p>
+      <p class="alien-desc">Crustacean-like genius with electrokinesis</p>
+    </div>
+
+    <!-- Alien 7: Spidermonkey -->
+    <div class="alien-container">
+      <h3 class="alien-name">7. Spidermonkey</h3>
+      <img src="https://i.imgur.com/8TzGJq5.png" alt="Spidermonkey">
+      <p class="stats">POWER: 70 | RATING: 3 | ULTIMATE: NO</p>
+      <p class="alien-desc">Acrobatic primate with web generation</p>
+    </div>
+
+    <!-- Alien 8: Goop -->
+    <div class="alien-container">
+      <h3 class="alien-name">8. Goop</h3>
+      <img src="https://i.imgur.com/3sVnQ2H.png" alt="Goop">
+      <p class="stats">POWER: 80 | RATING: 4 | ULTIMATE: YES</p>
+      <p class="alien-desc">Amorphous lifeform controlled by anti-gravity projector</p>
+    </div>
+
+    <!-- Alien 9: Echo Echo -->
+    <div class="alien-container">
+      <h3 class="alien-name">9. Echo Echo</h3>
+      <img src="https://i.imgur.com/2JfQkz4.png" alt="Echo Echo">
+      <p class="stats">POWER: 85 | RATING: 4 | ULTIMATE: YES</p>
+      <p class="alien-desc">Sonic-wave generating cloneable alien</p>
+    </div>
+
+    <!-- Alien 10: Alien X -->
+    <div class="alien-container">
+      <h3 class="alien-name">10. Alien X</h3>
+      <img src="https://i.imgur.com/mR0WQYx.png" alt="Alien X">
+      <p class="stats">POWER: 100 | RATING: 10 | ULTIMATE: YES</p>
+      <p class="alien-desc">Reality-warping celestial with near-omnipotent power</p>
+    </div>
+
+  </body>
 </html>

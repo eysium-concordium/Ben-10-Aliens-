@@ -1,32 +1,186 @@
-
 <html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Ultimate Aliens Database</title>
-      <style>
-         img {
-         display: block;
-         margin-left: auto;
-         margin-right: auto;
-         }
-         p {text-align: center;}
-      </style>
-   </head>
-   <body background="https://www.dropbox.com/s/3vlh09hgbgv8ohi/ben-10-background.jpg?dl=1">
-      <h1 align="center" style="background-color: black;color: white">Ultimate Aliens Database</h1>
-      <p align="center">
-         <iframe width="320" height="240"
-            src="https://www.youtube.com/embed/dSa2HTazq2U?autoplay=1&mute=1">
-         </iframe>
-      </p>
-      <h3 align="center" style="background-color: black;color: white">DATABASE - LOADED</h3>
-      <h3 align="center" style="background-color: darkgreen;color: yellow">1. HeatBlast</h3>
-      <img src="https://cdna.artstation.com/p/marketplace/printed_product_covers/000/008/638/art_print_big/file.jpg?1556015401" style="height: 300px;width: 300px">
-      <p style="background-color: yellow;color: black"> POWER: 70 | RATING: 3 | ULTIMATE: NO</p>
-      <br>
-      <h3 align="center" style="background-color: darkgreen;color: yellow">2. WildMutt</h3>
-      <img src="https://1.bp.blogspot.com/-3hVn21LPW_I/XuuBH-s4tNI/AAAAAAAAAbc/RBzJ9jT-OAU5wStE7AkPqzvOSvTgUYTYgCK4BGAsYHg/s623/Screenshot%2B2020-06-18%2Bat%2B11.05.07%2BAM.png" style="height: 300px;width: 300px">
-      <p style=" background-color: yellow;color: black"> POWER: 50 | RATING: 2 | ULTIMATE: YES</p>
-      <br>
-   </body>
+  <head>
+    <meta charset="utf-8">
+    <title>Ultimate Aliens Database</title>
+    <style>
+      body {
+         background: url('imgResources/background.jpg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
+      
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border: 3px solid #ff7b00;
+        border-radius: 10px;
+        background-color: rgba(0,0,0,0.7);
+        padding: 5px;
+        transition: transform 0.3s;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+      }
+
+      p {
+        text-align: center;
+        font-weight: bold;
+        margin: 10px auto;
+        padding: 10px;
+        max-width: 300px;
+      }
+      
+      h1, h3 {
+        padding: 10px;
+        text-align: center;
+        margin: 0;
+      }
+      
+      .alien-container {
+        background-color: rgba(0,0,0,0.7);
+        margin: 20px auto;
+        max-width: 400px;
+        border-radius: 10px;
+        padding: 10px;
+        border: 2px solid #ff7b00;
+      }
+      
+      .video-container {
+        margin: 20px auto;
+        text-align: center;
+        background-color: rgba(0,0,0,0.7);
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 320px;
+      }
+      
+      .database-header {
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #ff7b00;
+      }
+      
+      .stats {
+        background-color: #ff7b00;
+        color: black;
+      }
+      
+      .alien-name {
+        background-color: #8a2b00;
+        color: #ffbb77;
+        margin-top: 15px;
+        letter-spacing: 1px;
+      }
+      
+      .alien-desc {
+        color: #ffd8b8;
+        font-size: 0.9em;
+        padding: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="database-header">
+      <h1>Ultimate Aliens Database</h1>
+      <div class="video-container">
+        <iframe width="320" height="240"
+          src="https://www.youtube.com/embed/dSa2HTazq2U?autoplay=1&mute=1"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+      <h3>ULTIMATRIX ACTIVATED - 10 ALIENS LOADED</h3>
+    </div>
+
+    <!-- Alien 1: Ultimate Swampfire -->
+    <div class="alien-container">
+      <h3 class="alien-name">1. Ultimate Swampfire</h3>
+      <img src="https://i.imgur.com/5XrJj3P.png" alt="Ultimate Swampfire">
+      <p class="stats">POWER: 95 | RATING: 5 | ULTIMATE: YES</p>
+      <p class="alien-desc">Enhanced pyrokinesis with explosive seed pods and armored body</p>
+    </div>
+
+    <!-- Alien 2: Ultimate Humungousaur -->
+    <div class="alien-container">
+      <h3 class="alien-name">2. Ultimate Humungousaur</h3>
+      <img src="https://i.imgur.com/KY9WZQx.png" alt="Ultimate Humungousaur">
+      <p class="stats">POWER: 100 | RATING: 5 | ULTIMATE: YES</p>
+      <p class="alien-desc">Missile-launching armored dinosaur with enhanced strength</p>
+    </div>
+
+    <!-- Alien 3: Ultimate Big Chill -->
+    <div class="alien-container">
+      <h3 class="alien-name">3. Ultimate Big Chill</h3>
+      <img src="https://i.imgur.com/9zqXJjF.png" alt="Ultimate Big Chill">
+      <p class="stats">POWER: 90 | RATING: 5 | ULTIMATE: YES</p>
+      <p class="alien-desc">Can freeze targets from inside out with enhanced cryokinesis</p>
+    </div>
+
+    <!-- Alien 4: Ultimate Spidermonkey -->
+    <div class="alien-container">
+      <h3 class="alien-name">4. Ultimate Spidermonkey</h3>
+      <img src="https://i.imgur.com/8TzGJq5.png" alt="Ultimate Spidermonkey">
+      <p class="stats">POWER: 85 | RATING: 4 | ULTIMATE: YES</p>
+      <p class="alien-desc">Four arms with razor-sharp webs and enhanced agility</p>
+    </div>
+
+    <!-- Alien 5: Ultimate Cannonbolt -->
+    <div class="alien-container">
+      <h3 class="alien-name">5. Ultimate Cannonbolt</h3>
+      <img src="https://i.imgur.com/0JvBQeS.png" alt="Ultimate Cannonbolt">
+      <p class="stats">POWER: 95 | RATING: 5 | ULTIMATE: YES</p>
+      <p class="alien-desc">Spiked armor with high-velocity spinning attacks</p>
+    </div>
+
+    <!-- Alien 6: Ultimate Echo Echo -->
+    <div class="alien-container">
+      <h3 class="alien-name">6. Ultimate Echo Echo</h3>
+      <img src="https://i.imgur.com/2JfQkz4.png" alt="Ultimate Echo Echo">
+      <p class="stats">POWER: 90 | RATING: 5 | ULTIMATE: YES</p>
+      <p class="alien-desc">Can create solid sound constructs and powerful sonic blasts</p>
+    </div>
+
+    <!-- Alien 7: Ultimate Wildmutt -->
+    <div class="alien-container">
+      <h3 class="alien-name">7. Ultimate Wildmutt</h3>
+      <img src="https://i.imgur.com/8nVYfz3.png" alt="Ultimate Wildmutt">
+      <p class="stats">POWER: 80 | RATING: 4 | ULTIMATE: YES</p>
+      <p class="alien-desc">Enhanced senses with projectile quills and armored hide</p>
+    </div>
+
+    <!-- Alien 8: Ultimate Way Big -->
+    <div class="alien-container">
+      <h3 class="alien-name">8. Ultimate Way Big</h3>
+      <img src="https://i.imgur.com/mR0WQYx.png" alt="Ultimate Way Big">
+      <p class="stats">POWER: 100 | RATING: 10 | ULTIMATE: YES</p>
+      <p class="alien-desc">Cosmic-strength titan with laser vision and cosmic armor</p>
+    </div>
+
+    <!-- Alien 9: Ultimate Arctiguana -->
+    <div class="alien-container">
+      <h3 class="alien-name">9. Ultimate Arctiguana</h3>
+      <img src="https://i.imgur.com/9mZQYyN.png" alt="Ultimate Arctiguana">
+      <p class="stats">POWER: 85 | RATING: 4 | ULTIMATE: YES</p>
+      <p class="alien-desc">Can create ice constructs and absolute zero freeze beams</p>
+    </div>
+
+    <!-- Alien 10: Ultimate Alien X -->
+    <div class="alien-container">
+      <h3 class="alien-name">10. Ultimate Alien X</h3>
+      <img src="https://i.imgur.com/mR0WQYx.png" alt="Ultimate Alien X">
+      <p class="stats">POWER: ∞ | RATING: 10 | ULTIMATE: YES</p>
+      <p class="alien-desc">Omnipotent reality-warper with no known limits</p>
+    </div>
+
+  </body>
 </html>
