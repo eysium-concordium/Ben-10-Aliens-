@@ -87,3 +87,5 @@ stopBtn.addEventListener('click', () => {
     icon.classList.remove('fa-pause');
     icon.classList.add('fa-play');
   });
+
+const v = 100;
