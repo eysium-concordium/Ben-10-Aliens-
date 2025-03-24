@@ -1,13 +1,16 @@
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Classic Aliens Database</title>
     <style>
       body {
-        background: url('https://upload.wikimedia.org/wikipedia/en/4/44/Ben10logo.png');
+        background: url('imgResources/background.jpg') no-repeat center center fixed;
+        background-size: cover;
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        color: white;
       }
       
       img {
@@ -87,7 +90,7 @@
       const aliens = [
         { 
           name: "HeatBlast", 
-          image: "https://i.imgur.com/JQ6X1yP.png", 
+          image: "imgResources/Heatblast.png", 
           power: 70, 
           rating: 3, 
           ultimate: "NO",
@@ -95,7 +98,7 @@
         },
         { 
           name: "WildMutt", 
-          image: "https://i.imgur.com/8nVYfz3.png", 
+          image: "imgResources/WildMutt.png", 
           power: 50, 
           rating: 2, 
           ultimate: "YES",
@@ -111,7 +114,7 @@
         },
         { 
           name: "XLR8", 
-          image: "https://i.imgur.com/2KjVWtH.png", 
+          image: "imgResources/XLR8.png", 
           power: 85, 
           rating: 4, 
           ultimate: "NO",
@@ -119,7 +122,7 @@
         },
         { 
           name: "Ghostfreak", 
-          image: "https://i.imgur.com/9mZQYyN.png", 
+          image: "imgResources/Ghostfreak.png", 
           power: 75, 
           rating: 4, 
           ultimate: "YES",
@@ -127,7 +130,7 @@
         },
         { 
           name: "Ripjaws", 
-          image: "https://i.imgur.com/1k6yUQJ.png", 
+          image: "imgResources/Ripjaws.png", 
           power: 65, 
           rating: 3, 
           ultimate: "NO",
@@ -135,7 +138,7 @@
         },
         { 
           name: "Upgrade", 
-          image: "https://i.imgur.com/7Wq3TzK.png", 
+          image: "imgResources/Upgrade.png", 
           power: 80, 
           rating: 4, 
           ultimate: "YES",
@@ -143,7 +146,7 @@
         },
         { 
           name: "Diamondhead", 
-          image: "https://i.imgur.com/5A0wXhM.png", 
+          image: "imgResources/Diamondhead.png", 
           power: 90, 
           rating: 5, 
           ultimate: "NO",
@@ -151,7 +154,7 @@
         },
         { 
           name: "Cannonbolt", 
-          image: "https://i.imgur.com/0JvBQeS.png", 
+          image: "imgResources/Cannonbolt.png", 
           power: 85, 
           rating: 4, 
           ultimate: "YES",
@@ -159,7 +162,7 @@
         },
         { 
           name: "Grey Matter", 
-          image: "https://i.imgur.com/6Y5jU9L.png", 
+          image: "imgResources/GreyMatter.png", 
           power: 30, 
           rating: 1, 
           ultimate: "NO",
@@ -175,7 +178,7 @@
         
         alienDiv.innerHTML = `
           <h3 style='background-color: darkgreen;color: yellow'>${alien.name}</h3>
-          <img src='${alien.image}' alt='${alien.name}' onerror="this.src='https://i.imgur.com/6Y5jU9L.png'" title='${alien.description}'>
+          <img src='${alien.image}' alt='${alien.name}' onerror="this.src='imgResources/GreyMatter.png'" title='${alien.description}'>
           <p class='alien-stats'> 
             POWER: ${alien.power} | RATING: ${alien.rating} | ULTIMATE: ${alien.ultimate}
           </p>
