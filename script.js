@@ -87,3 +87,12 @@ stopBtn.addEventListener('click', () => {
     icon.classList.remove('fa-pause');
     icon.classList.add('fa-play');
   });
+
+  const aliens = [
+    { name: "Heatblast", img: "imgResources/Heatblast.jpeg" },
+    { name: "Fourarms", img: "imgResources/Fourarms.jpeg" },
+    { name: "XLR8", img: "imgResources/XLR8.jpeg" },
+    { name: "Diamondhead", img: "imgResources/Diamondhead.jpeg" },
+    { name: "Cannonbolt", img: "imgResources/cannonbolt.jpeg" },
+    { name: "vampfreak", img: "imgResources/vampfreak.jpeg" }
+];

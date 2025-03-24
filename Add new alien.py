@@ -9,3 +9,4 @@ print("Copy The String And Paste: ")
 print("<h3 align='center' style='background-color: darkgreen;color: yellow'>"+alien_name+"</h3>")
 print("<img src='"+img_link+"' style='height: 300px;width: 300px'>")
 print("<p style=' background-color: yellow;color: black'>POWER: "+power+"| RATING: "+rating+"</p><br>")
+
