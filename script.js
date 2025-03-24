@@ -88,4 +88,11 @@ stopBtn.addEventListener('click', () => {
     icon.classList.add('fa-play');
   });
 
-const v = 100;
+  const aliens = [
+    { name: "Heatblast", img: "imgResources/Heatblast.jpeg" },
+    { name: "Fourarms", img: "imgResources/Fourarms.jpeg" },
+    { name: "XLR8", img: "imgResources/XLR8.jpeg" },
+    { name: "Diamondhead", img: "imgResources/Diamondhead.jpeg" },
+    { name: "Cannonbolt", img: "imgResources/cannonbolt.jpeg" },
+    { name: "vampfreak", img: "imgResources/vampfreak.jpeg" }
+];
